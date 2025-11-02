@@ -1,0 +1,186 @@
+/* Body */
+body {
+	background-image:url(../images/carbon_ptn4.jpg);
+	background-repeat: repeat;
+
+}
+
+/* no-link Under-Bar */
+A { text-decoration: none; }
+A:link {color:cyan;}
+A:hover {color:red;}
+A:visited {color:orange;}
+
+/* Font */
+.font_xxl {font-size: xx-large;}
+.font_xlg {font-size: x-large;}
+.font_lrg {font-size: large;}
+.font_mid {font-size: medium;}
+.font_sml {font-size: small;}
+.font_xsm {font-size: X-small;}
+.font_xxs {font-size: XX-small;}
+
+/* Table */
+.tbl_1 { border-bottom: 0px solid; border-left: 0px solid; empty-cells: show; }
+.tbl_1 th { border-top: 0px solid; border-right: 0px solid; }
+.tbl_1 td { border-top: 0px solid; border-right: 0px solid; }
+
+.tbl_2 { border-bottom: 1px solid; border-left: 1px solid; border-collapse:collapse; empty-cells: show; }
+.tbl_2 th { border-top: 1px solid; border-right: 1px solid; }
+.tbl_2 td { border-top: 1px solid; border-right: 1px solid; }
+
+.tbl_grn { border: 1px solid green; border-collapse:collapse; empty-cells: show; }
+.tbl_grn td { border-top: 1px solid green; border-right: 1px solid green; }
+
+/* Color */
+.clr_wht {color: white;}
+.clr_vio {color: violet;}
+.clr_cri {color: crimson;}
+.clr_mag {color: magenta;}
+.clr_red {color: red;}
+.clr_pbl {color: powderblue;}
+.clr_sky {color: skyblue;}
+.clr_blu {color: blue;}
+.clr_ylw {color: yellow;}
+.clr_grn {color: green;}
+.clr_gyl {color: greenyellow;}
+.clr_lme {color: lime;}
+.clr_gry {color: gray;}
+.clr_ora {color: orange;}
+.clr_khk {color: khaki;}
+.clr_plm {color: plum;}
+.clr_ppl {color: purple;}
+.clr_blk {color: black;}
+
+/* Background-Color */
+.bgclr_wht {background-color:white;}
+.bgclr_vio {background-color:violet;}
+.bgclr_cri {background-color:crimson;}
+.bgclr_mag {background-color:magenta;}
+.bgclr_ora {background-color:orange;}
+.bgclr_pbl {background-color:powderblue;}
+.bgclr_sky {background-color:skyblue;}
+.bgclr_stl {background-color:steelblue;}
+.bgclr_lcy {background-color:lightcyan;}
+.bgclr_aqu {background-color:aqua;}
+.bgclr_dkb {background-color:darkblue;}
+.bgclr_ind {background-color:indigo;}
+.bgclr_ylw {background-color:yellow;}
+.bgclr_lyw {background-color:lightyellow;}
+.bgclr_gyl {background-color:greenyellow;}
+.bgclr_lim {background-color:lime;}
+.bgclr_lmg {background-color:limegreen;}
+.bgclr_plm {background-color:plum;}
+.bgclr_dkg {background-color:darkgreen;}
+.bgclr_khk {background-color:khaki;}
+.bgclr_tan {background-color:tan;}
+.bgclr_vio {background-color:violet;}
+.bgclr_och {background-color:orchid;}
+.bgclr_chc {background-color:chocolate;}
+.bgclr_slv {background-color:silver;}
+.bgclr_lgr {background-color:lightgray;}
+.bgclr_gry {background-color:gray;}
+.bgclr_blk {background-color:black;}
+
+/* Align */
+.aln_cnt {text-align: center;}
+.aln_lft {text-align: left;}
+.aln_rgt {text-align: right;}
+
+/* Vertical-Align */
+.valn_top {vertical-align: top;}
+.valn_mdl {vertical-align: middle;}
+.valn_btm {vertical-align: bottom;}
+
+/* Width */
+.w_020 {width:  20px;} .w_040 {width:  40px;} .w_060 {width:  60px;}
+.w_080 {width:  80px;} .w_100 {width: 100px;} .w_120 {width: 120px;}
+.w_140 {width: 140px;} .w_160 {width: 160px;} .w_180 {width: 180px;}
+.w_200 {width: 200px;} .w_220 {width: 220px;} .w_240 {width: 240px;}
+.w_260 {width: 160px;} .w_280 {width: 280px;} .w_300 {width: 300px;}
+.w_320 {width: 200px;} .w_340 {width: 340px;} .w_360 {width: 360px;}
+.w_380 {width: 380px;} .w_400 {width: 400px;} .w_420 {width: 420px;}
+.w_440 {width: 440px;} .w_460 {width: 460px;} .w_480 {width: 480px;}
+.w_500 {width: 500px;} .w_520 {width: 520px;} .w_540 {width: 540px;}
+.w_560 {width: 560px;} .w_580 {width: 580px;} .w_600 {width: 600px;}
+.w_620 {width: 620px;} .w_640 {width: 640px;} .w_660 {width: 660px;}
+.w_680 {width: 680px;} .w_700 {width: 700px;} .w_720 {width: 720px;}
+.w_740 {width: 740px;} .w_760 {width: 760px;} .w_780 {width: 780px;}
+.w_800 {width: 800px;} .w_820 {width: 820px;} .w_840 {width: 840px;}
+.w_860 {width:  60px;} .w_880 {width: 880px;} .w_900 {width: 900px;}
+
+/* Height */
+.h_020 {height:  20px;} .h_030 {height:  30px;} .h_040 {height:  40px;}
+.h_050 {height:  50px;} .h_060 {height:  60px;} .h_070 {height:  70px;}
+.h_080 {height:  80px;} .h_090 {height:  90px;} .h_100 {height: 100px;}
+
+/* float */
+.float_l {float:  left;} .float_r {float: right;} .float_n {float: none;}
+
+/* border */
+.bdr_0 {border: 0px solid;} .bdr_1 {border: 1px solid;} .bdr_2 {border: 2px solid;}
+.bdr_3 {border: 3px solid;} .bdr_4 {border: 4px solid;} .bdr_5 {border: 5px solid;}
+
+/* border-color */
+.bdclr_wht {color: white;}
+.bdclr_vio {color: violet;}
+.bdclr_cri {color: crimson;}
+.bdclr_mag {color: magenta;}
+.bdclr_red {color: red;}
+.bdclr_pbl {color: powderblue;}
+.bdclr_sky {color: skyblue;}
+.bdclr_blu {color: blue;}
+.bdclr_ylw {color: yellow;}
+.bdclr_grn {color: green;}
+.bdclr_gyl {color: greenyellow;}
+.bdclr_lme {color: lime;}
+.bdclr_gry {color: gray;}
+.bdclr_ora {color: orange;}
+.bdclr_khk {color: khaki;}
+.bdclr_plm {color: plum;}
+.bdclr_ppl {color: purple;}
+.bdclr_blk {color: black;}
+
+/* Overflow */
+.over_vsb {overflow: visible;} .over_hdn {overflow: hidden;}
+.over_aut {overflow: auto;}    .over_scr {overflow: scroll;}
+.over_x_vsb {overflow-x: visible;} .over_x_hdn {overflow-x: hidden;}
+.over_x_aut {overflow-x: auto;}    .over_x_scr {overflow-x: scroll;}
+.over_y_vsb {overflow-y: visible;} .over_y_hdn {overflow-y: hidden;}
+.over_y_aut {overflow-y: auto;}    .over_y_scr {overflow-y: scroll;}
+
+/* Text Decoration */
+.txt_line_thr {text-decoration: line-through;}
+.txt_undr {text-decoration: underline;}
+.txt_ovr {text-decoration: overline;}
+.txt_blnk {text-decoration: blink;}
+.txt_dot_red {text-decoration: underline dotted red;}
+/* Table Corner */
+div.corner_round {
+    background:yellow;
+    padding:5px;
+    width:180px;
+    }
+.corner_round_L {
+    background:yellow;
+    padding:3px;
+    width:200px;
+    }
+.corner_round_R {
+    background:yellow;
+    padding:3px;
+    width:600px;
+    }
+
+	a.linkColor_lim {
+	  color: lime;
+	  text-decoration: none;
+	}
+	a.linkColor_grn {
+	  color: green;
+	  text-decoration: none;
+	}
+	a.linkColor_blk {
+	  color: green;
+	  text-decoration: none;
+	}

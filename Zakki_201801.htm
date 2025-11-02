@@ -1,0 +1,476 @@
+<html>
+<!-- 作成日 2009-08-07 23:47 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+<title>思考戰車's Labo Ver.3</title>
+</head>
+<body>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
+  <script type="text/javascript" src="js/jquery.corner.js"></script>
+  <script type="text/javascript">
+   $(function(){
+     $(".corner_round_L").corner();
+     $(".corner_round_R").corner();
+   });
+  </script>
+</head>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/27[Sat]</td>
+      <td class="corner_round_R w_600">Win10インストール(門前払い編)</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+          <table class="w_800">
+            <tr>
+              <td>
+                  <a href="images/bootcamp_failture_1.jpg" data-lightbox="win10_ng" data-title="偽装のパーティションを指定して、ディスクイメージを指定して、[インストール]押下すると...">
+                    <img class="bdr_5 float_l clr_wht w_400" src="images/bootcamp_failture_1.jpg" alt=""/>
+                  </a>
+              </td>
+              <td>
+                  <a href="images/bootcamp_failture_2.jpg" data-lightbox="win10_ng" data-title="進捗ゲージが少し進んだ処で、突然エラーが発生して、先に進めない...">
+                    <img class="bdr_5 float_l clr_wht w_400" src="images/bootcamp_failture_2.jpg" alt=""/>
+                  </a>
+              </td>
+            </tr>
+          </table>
+        <p>
+            ●Appleにやられたぜぇ...つー訳で、昨日話題にしたWindows10 Proの件、残念ながらiMac2015へのインストールが出来ていない。原因は「Bootcampが最新ファイルフォーマットAPFSに対応していない」為である。iMac2015を最新のHigh SierraへUpgradeした際、内蔵SSDのファイルフォーマットをHFS+からAPFSへ切り替えてたが、これが全ての元凶で、メリット・デメリットを把握してないのに、興味本位で導入すべきではなかった。状況としては、Bootcampアシスタントを起動して、(形式上)内蔵SSDにWin10用ボリュームを割り当てて、Win10ProのUSBメモリから生成したディスクイメージ(iso)を指定して、[インストール]押下して先に進むと、画面が切り替わって、進捗ゲージが伸び始めるが、1分程経過して、パーティション作成に進んだ処で「ディスクにパーティションを作成できませんでした。」とエラーを吐いて振り出しに戻った。ディスクユーティリティで内蔵SSDをFirstAid実施するも異常は見られず、セキュリティの「FireVaultをOFF」にしても改善しない。
+        </p>
+        <p>
+            ●どうにも進めないので、ググって暫く見てると、「BootcampはAPFSに未対応」との情報を発見。<a href="https://discussionsjapan.apple.com/thread/110192371" onclick="window.open(this.href); return false;">Apple公式フォーラムのあるスレッド</a>に私が遭った状況の発生から「Appleが対応版を出すまで無理」「Sierraにダウングレード(クリーンインストール!!)して、HFS+でBootcamp環境を作ってからHigh Sierraにアップグレード」との答えまで書いてあった。結論としては、「新たなAPFSをリリースしたけど、BootcampはあんまApple的に売上に貢献してないので、未対応のままである。その内に対応するんじゃないかな」の様だ。しかし、これに付いてAppleから公式な発表は無い。嘗てはWindowsユーザーの興味を惹きたかったけど、Apple自身がiPhoneで覇権を握った事で有頂天の自惚れ驕りまくりングに陥っており、「煩いジョブズは居なくなったし、iPhoneでウハウハで、Macは正直どーでも良い感じだし、Windowsなんて今更どーでも良いや、ハハッ」と、生命線のハズのOS製品を、フツーだったら有り得ない片手落ち状態でリリースしてる印象、Appleに自浄作用が無くなってるんだろうな。APFSに切り替えた時点で、死亡フラグがビンビン立っていたってワケだ。以前話題にした時も少々困っていたし、この件で、当面APFSでフォーマットしない事を誓うのであった。
+        </p>
+          <table class="w_800">
+            <tr>
+              <td>
+                  <a href="images/bootcamp_failture_3.jpg" data-lightbox="win10_ng" data-title="Thunderbolt接続SSDをフォーマットまでは出来たけど、...やっばダメかぁ〜、騙し切れなかった模様">
+                    <img class="bdr_5 float_l clr_wht w_400" src="images/bootcamp_failture_3.jpg" alt=""/>
+                  </a>
+              </td>
+              <td>
+                  <a href="images/phoenix_belt_exchanged.jpg" data-lightbox="win10_ng" data-title="Phoenixを余ってたベルトに交換してイメチェン、ん〜イイ感じ">
+                    <img class="bdr_5 float_l clr_wht w_400" src="images/phoenix_belt_exchanged.jpg" alt=""/>
+                  </a>
+              </td>
+            </tr>
+          </table>
+        <p>
+            ●その一方、「Thunderbolt接続ならば、内蔵ボリュームと同じ扱いになるらしいぞ」との情報を得て、<a href="https://www.seagate.com/jp/ja/about-seagate/news/gf4mac-thunderbolt-in-apple-emea-stores-master-pr/" onclick="window.open(this.href); return false;">GoFlex Thunderbolt-I/F[Seagate]</a>にSanDiskのSDDを装着、その他のドライヴは全部切断状態にして、EFIブートでWin10ProのUSBメモリから起動してみた。セットアップが開始して、インストール先を指定する画面まで来たが、ここでSSDのドライヴを初期化する事は出来るが、[次へ]を押下しても、エラーが出て先に進めない。恐らくココでAppleのガードが掛かっているのだろう。そーじゃなかったら、「内蔵ボリュームにしかインストールできない」まま何年も放置してるBootcampなんてゴミだし、ユーザが自由にOSを選択する状況が生まれているだろう...が、このくだらない誰得な状況が現実である。Thunderbolt-I/Fでインストール出来た、と云うネタは1例しか発見出来ず、その人は余り詳しく書いてない、しかも数年前の話題なので、それが今だと通用しないのか、Appleガードが作用しているのか、解決策は発見出来ていない。私如きにはどうにもならないと判断、Win10環境構築は、一時撤退。
+        </p>
+        <p>
+            ●話題をガラッと変えて、腕時計の話。所有する機械式腕時計では、唯一の赤いダイアルを纏うブライツ・フェニックス。序列第6位ながらも、お気に入り度は高く、ON向けのローテーションに入っている。そんなフェニックス、メタルブレスも良いけど、ベルト変えてみようかな、と時計関連のパーツケースを見ると、カレラ向けのカーボン押柄カーフ赤ステッチベルトが、22mm幅で丁度良い。しかし、Dバックル無しだと使い勝手が悪いと同時に装着操作でベルトに折れのクセがついてしまいがちで、事実カレラ装着時はDバックルを使っていなかったので、既に少し折れ癖がついている。このまま放置してると、そこからベルト破損に繋がるので、急遽お馴染みの<a href="http://www.watchband.co.jp/buckle/dx08.html" onclick="window.open(this.href); return false;">松重商店のDX08N</a>の22mmタイプをゲットして、スポーティな装いにイメージチェンジ。ベルトの裏側が赤のが隠し派手ポイントでグッド。
+        </p>
+        <p>
+            ●カーボン好きとしては、差し色が入ったリアルカーボンのベルトが欲しい処だが、あるのはカーボン調ばかりで、リアルカーボンはスピマスレーシングに装着してる<a href="https://www.morellato.jp/newdata/lineup/sports/item/u3824237.html" onclick="window.open(this.href); return false;">モレラートのカラテ</a>しか存在しない模様。カラテのカラーステッチ版展開も無く、ググった限りでは発見出来ていない。数年前にコレを発見した頃と比較して、カーボンへの世間の注目度も上がっているので、色んなカーボングッズも増えるのだろうか...などと夢を見ていたが、どうやら幻想だったよーで、増えるのはパチモンばかりで、リアルとなると財布が増えた程度か、でもアレOEMばかりで元は同じなんじゃねぇの?ってのもあるし、カーボンの加工性の悪さから、カーボン押柄のレザー製品が主流である。大阪の<a href="http://www.zero-carbon.com/original_product.html" onclick="window.open(this.href); return false;">Zero Carbon</a>と云うガチのカーボンメーカーがカーボンアイテムを作り始めた時には、「カーボンの時代キター」と歓喜したものだが、所詮は1メーカーの気まぐれな他産業展開、一時の勢いが落ち着いたが最後、全く更新されないザマであり、他のメーカーも追従せず、これまた夢だったよーで。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/26[Fri]</td>
+      <td class="corner_round_R w_600">Windows10 Pro Retail Package</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+  <a href="images/win10_retail_package.jpg" data-lightbox="win10" data-title="Win10パッケージ版購入したので、遊んでるSSDが予定調和になると期待">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/win10_retail_package.jpg" alt=""/>
+  </a>
+            ●Amazonより、Windows10 Proのプロダクト版をゲットした。メディアはUSB3.0メモリだ。Giuliettaに搭載している<a href="http://pioneer.jp/carrozzeria/carnavi/rakunavi/?ref=header" onclick="window.open(this.href); return false;">楽ナビ[Carrozzeria/Pioneer]</a>の地図情報を更新するに際して、Win10を導入する前の試みとして、<a href="http://ascii.jp/elem/000/000/610/610058/" onclick="window.open(this.href); return false;">Wine</a>と云うMac上でWindowsアプリケーションを動作する事が出来るかも知れないAPIツールを用いて、<a href="http://pioneer.jp/car/navistudio/" onclick="window.open(this.href); return false;">更新ツール Navi Studio</a>を動作するか?を行った。使ったのは<a href="https://matome.naver.jp/odai/2140238022377155001" onclick="window.open(this.href); return false;">EasyWine</a>と云う、Wine系では定評のあるツール。Navi Studio自体はインストール出来て、起動もしたんだけど...残念ながらSDカードスロットが認識されない、残念。Wine系には、装置の種類を知らせる手段がないので、ダメっぽい。その他のアプリケーションも、動作はするけど、決して安定動作するとは限らないので、永続的に使うツールとしては役不足かな、が私のEasyWineの初期評価。
+        </p>
+        <p>
+            ●その一方、年末に買ったけど予想通りの放置モードに陥っていた<a href="https://www.sandisk.co.jp/home/ssd/ssd-plus-j26" onclick="window.open(this.href); return false;">SD Plus 960GB[SanDisk]</a>、iMacに向かってると常にUSB接続すらせずに文字通りの放置の様が視界に収まり、どーにかしないとなぁ、との思いもあったり...で、結局Windows10を導入する事にした。比較的安価なDSP版は、セット購入した装置に紐付く事が前提となっており、今のiMac環境では、メモリすら増設する必要がないのと、リテール版ならば、「同時に1台にしかインストールしていない」状態を守れば、iMac2015に入れて、それを消して、MBP2015にインストールする事も出来る。そのままでは装置構成違いのMSチェックに引っ掛かるので、電話で更新が必要になるが、後ろめたいことは何もない。
+        </p>
+        <p>
+            ●Homeではなくて、少しお高いProにしたのは、「Windows Updateのタイミングを自分でコントロール出来る」事が一番大きい。リモートコントロールもProだけだけど、私の環境では不要かな。私は仕事でProしか触ってないが、Homeは問答無用でUpdateが即時適用されるみたいで、「それってタマ握られてんじゃん。自分で管理してるつもりでも、上位でMSの支配受けてんじゃん」と云うのが気持ち的に不快だし、実用上も「Mac使いたいのに、更新が全然終わらない」とナカナカマズいケースが想定される。そして、嘗ての<a href="https://www.google.co.jp/search?rlz=1C5CHFA_enJP762JP762&biw=1117&bih=1107&tbm=isch&sa=1&ei=9FBrWsujB4Sj8AXjgY-ACg&q=windows%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A1%E3%82%83%E3%82%93&oq=windows%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%A1%E3%82%83%E3%82%93&gs_l=psy-ab.3...3435.6144.0.6672.10.10.0.0.0.0.120.883.8j2.10.0....0...1c.1j4.64.psy-ab..0.0.0....0.y56UBfBa0bk" onclick="window.open(this.href); return false;">Windows10アップグレードちゃん</a>で名高い「Windows10無償アップグレード祭り」のアレ、きっとHomeだと「ふと気付いたら勝手に再起動して、勝手にインストール始まっとるゥゥゥゥ、やめてぇぇぇ」が再現されるのだろう。形而上かも知れないけど、マシンの主導権は自分に在りたい、と云うのが理由だ。
+        </p>
+        <p>
+            ●複雑な手順を踏めば、放置モードのSSDにBootcampインストールが出来る様なので、それにトライしてみる。トライして、どうにも躓いたら、「VirtualBoxへWin10インストール」、更に「<a href="https://www.parallels.com/jp/landingpage/pd/general/" onclick="window.open(this.href); return false;">Parallels Desktop</a>へWin10インストール」と云う代替策もある。後者の2つは仮想環境の動作なので、軽目のアプリケーション、今回の要件である「Navi Studioを動かして、Giuliettaのナビ情報を更新する」は、問題無く実現出来るだろう。しかし、旧メインiMac2011でPlayしていた<a href="https://elderscrolls.bethesda.net/ja/skyrim" onclick="window.open(this.href); return false;">The Elder Scrolls V:Skyrim[Bethesda]</a>など、今Macで<a href="http://store.steampowered.com/" onclick="window.open(this.href); return false;">Steam</a>を利用してゲームに興じる事も出来ているが、元々はBootcamp環境でSteamを起動して、そこからSkyrimなどのゲームに興じていたのだ。最近は、VRでムーブメントを起こそうとしていたり、Switchへ移植して一部で話題になっている模様。私は、やっぱPC版の高解像度でPlayしたいけど。
+        </p>
+        <p>
+            ●そー云えば、TESOは結局Play時間が確保出来ずに熱が冷めてしまったな、一時はあんなに楽しみにしてたのに、もうやる気はない、かな。期待通りになれば、外付けSSDへWindows10 Pro環境を構築して、iMac2015で動作刷るレベルのWindows版ゲームもPlay出来るよーになるかも?と、元々の要件そっちのけで期待している自分がいる。今週は積雪ドライヴでゲンナリのお疲れモードなので、明日トライしてみよう。
+        </p>
+          <table class="w_800">
+            <tr>
+              <td>
+                  <a href="images/giulietta_snow_1.jpg" data-lightbox="win10" data-title="降雪の翌朝、自宅の我がGiuliettaの姿、危うく自宅でスタックさそうになって、この後雪かき30分コースだった...">
+                    <img class="bdr_5 float_l clr_wht w_400" src="images/giulietta_snow_1.jpg" alt=""/>
+                  </a>
+              </td>
+              <td>
+                  <a href="images/giulietta_snow_2.jpg" data-lightbox="win10" data-title="ノーマルタイヤ履いてるのボケ共の所為で、R4パイパス以外は5〜15km/hで進み、間々田駅まで1時間半も掛かった...ラリーカーみたいだ">
+                    <img class="bdr_5 float_l clr_wht w_400" src="images/giulietta_snow_2.jpg" alt=""/>
+                  </a>
+              </td>
+            </tr>
+          </table>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/20[Sat]</td>
+      <td class="corner_round_R w_600">LEDヘッドライト(再購入)</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+  <a href="images/led_headlight.jpg" data-lightbox="Amazon" data-title="見た目はちょっとカッコイイ。赤いボディになったので、初期不良も結果オーライ?否、それは違うだろ">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/led_headlight.jpg" alt=""/>
+  </a>
+            ●<a href="https://www.amazon.co.jp/gp/product/B0721M7CVF/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1" onclick="window.open(this.href); return false;">ZHENWEI 8000ルーメン LEDヘッドライト</a>、ゲットだぜッ!!つー訳で、懲りもせずに再び私的に無銘ブランド品をAmazonより入手した。この手のヘッドマウント式ライト装置は、<a href="http://www.gentos.jp/products/headlight/" onclick="window.open(this.href); return false;">Gentos</a>がメジャーの様だが、私はそれを認識したのはコレを発注した後。改めて見ると、検索結果の中に含まれているが、どうやら多灯式のインパクトに対してGentosの単灯式は地味で、興味を惹かれなかった模様。前回とハードウェア自体は同一の様だが、今度は開封した時点でフツーにちゃんとしてて、やっぱアレ返品そのまま再発送では?との疑いが増大した。取り敢えず、多少の恐れを抱きつつの初期動作確認はアッサリとOKで、このまま問題無く作動してくれれば、暗所での各種活動時のサポートへの期待大。深夜に自宅の近所を照射してみたが、所有する自転車向けライトよりも、遥かに明るくて広域を照らしてくれる。遠方に向けると50メートルは軽く有効範囲だ。それ以上は私の視力___まだ暗さに慣れてない状態だった___が追い付いてない。8000ルーメンは盛り過ぎとしても、かなり高照度なライトで、これで充電が正常で、一般的な耐久性も備えていれば、僅か2k円でこの性能はお買い得感高し。電池残量が理解らないのが不安点で、背面の赤く点灯する部分が点滅してくれるギミックがあれば尚良。この価格帯にそれを要求するのは酷かも知れないが、バッテリが国内ではマイナーな18650Li-ion電池でわざわざ用意しないと予備持ってる人なんで皆無な現状では、ちょっと困る仕様だ。予備バッテリ充電キットを備えていれば良いのだが、実際に連続動作が必要なシーンが今の私には想像出来ないので、一先ずは前述の不安点の確認から始めよう。
+        </p>
+        <p>
+            ●そして、今度はぼったくり詐欺業者の商品を掴んでしまった。購入したのは<a href="http://www.zebra.co.jp/pro/del_guard/index.html" onclick="window.open(this.href); return false;">デルガード0.5ミリ[Zebra]</a>の限定色カーボンレッド、Amazonだと<a href="https://www.amazon.co.jp/gp/product/B01CCJX2XI/ref=oh_aui_detailpage_o02_s00?ie=UTF8&th=1" onclick="window.open(this.href); return false;">ココ</a>で売ってて、発注する時にカーボンレッドだけAmazonプライムじゃない業者である事を失念して、まさか値段がおかしい事に気付かなかった。普段は、この手の詐欺を回避する様に注意しているのだが、まさかこんなレアリティに乏しい安価な文具にトラップがあるとは想定外で、定価486円(税込)に対して、購入価格は6.97倍の3,390円(!)。しかも、今見ると私による成功に気を良くしたのか、16倍の7,780円(!!)に値上げしてる。コレ、そんな商材ではないと思うんだけど、敢えて穴場且つニッチなターゲットを狙う詐欺手法なのだろう。当然、返品手続きをしており、明日の午前中に返品する。いやー、危ない。
+        </p>
+        <p>
+  <a href="images/衛宮さんちの今日のごはん.jpg" data-lightbox="Amazon" data-title="戦闘シーンは一切ない、やさしい世界。はらぺこ王ことセイバーが可愛い">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/衛宮さんちの今日のごはん.jpg" alt=""/>
+  </a>
+            ●少し気分を害されたが、気を取り直して。<a href="https://comic.pixiv.net/works/2221" onclick="window.open(this.href); return false;">衛宮さんちの今日のごはん第1,2巻[TAa/只野まこと/TYPE-MOON]</a>を購入した。最近流行りのご飯もの漫画の一つで、ほぼ大多数は描画が気持ち悪いものばかりで、嫌悪の対象なのだが、この作品はベースのFateの中で、主人公の衛宮士郎が高度の料理スキル持ちと云う背景もあり、絵柄も難しいであろう食べ物の描写スキルが高いと同時に、キャラが原作からほのぼの寄りになってて好印象。最初はリンク先で眺めてたんだけど、単行本が出ると同時に掲載話が削られ始めたので、高評価してるんだしな、と応援の意味も込めて単行本を購入。評価したクリエイターには、相応の報酬を与えるべきだ。
+        </p>
+        <p>
+            ●ゲームの話。細々とForza7をPlayしており、今日漸くコレクショングレードが4の「スーパーレア」に達して、やっと名だたるスーパーカーの大半を、ゲーム内通貨(CR)があれば手に入れる事が出来るよーになった。早速、ゲームのメイン扱いになっている<a href="https://www.porsche.com/japan/jp/models/911/911-gt2-rs/911-gt2-rs/" onclick="window.open(this.href); return false;">911 GT2 RS 2018[Porsche]</a>と、最新のフェラーリ<a href="http://auto.ferrari.com/ja_JP/sports-cars-models/car-range/ferrari-488-gtb/" onclick="window.open(this.href); return false;">488 GTB[Ferrari]</a>をゲットした。その前にグレード4に達する為のポイント稼ぎに数台ゲットしており散財し尽した為、現在の所持CRは僅か1.3万、最も安価な車両でも2.2万するので、何も買えない。自宅音響で前述の2台によるドライヴ、すげーイイ、マジヤバイ。改めて、AVアンプの最適化のトリガーになってくれた瓏氏には感謝だ。
+        </p>
+        <p>
+            ●こうして高性能車両が手に入るよーになると、性能的には凡庸な我がGiuliettaの出番が無くなって行くのを感じて、そもそもGiuliettaを仮想環境で走らせるのがXboxOneS導入の原因だった事を思うと、少し複雑な気分になる。ならば、魔改造するしかあるまい。Forza7には、エンジン換装、駆動系変更、と云うシリーズではお馴染みながら、他には余り無い超強化チューニングメニューがあり、今回はGiuliettaを各種パワーアップ、駆動系、足回り系、車重系、全てフルチューンにした上で、エンジンを1.6リッターラリーカータイプ、恐らくは147のチューニングエンジンと思われるソレと、駆動系はFRへ変更。それらの結果、最高出力404kW(550ps)、最大トルク650Nm、車重1246kg(2.26kg/ps)、最高速度301km/h...のSクラスへとクラスチェンジした「Giuliettaだったもの」が出来上がった。オリジナルはDクラス、最高出力172kW(240ps)、最大トルク340Nm、車重1320kg(5.5kg/ps)だったので、正しく魔改造。試走して余りの変貌っぷりに、「あれっ、なんでGiuliettaイジッテんだっけ?もうコレGiuliettaじゃなくても良いんじゃない?」と、本末転倒な結果に。仕方無いので、魔改造を施したコレとは別にオリジナルをもう一台購入して、色も変えて別モノとして扱う事にする。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/19[Fri]</td>
+      <td class="corner_round_R w_600">聴力復活</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●昨日の業後、宇都宮の耳鼻科へ行って右耳の聴力を復活させて来た。診断の結果、予想通りの耳垢栓塞、つまり耳垢が穴を塞いでしまった状態で、かなり前に一度なった症状だった。退社前に職場の方にこの事を伝えると、「突発性難聴の可能性もあるので、早く行った方が良い」と云われて、そんなまさか、と思いつつ職場を後にした。前日の段階で宇都宮駅近辺の耳鼻科をチェックしていたのだが、肝心の自分が徒歩である事を完全に失念してて、近いと思って移動したら、20分近く、R4の近くまで歩いてしまった。次の失敗として、GoogleMapにナビを任せてたのだが、Google先生がかな〜り手前、目的地の100m手前でナビを勝手に終えてしまい、暗いので位置が理解らない。Mapを見てそれらしき建物に着いたが、入り口が...無い、あれ?正解は、GoogleMapに誤誘導された私が居たのが裏道側で、入り口は区画の反対側だった。それを知ったのは事が終えて帰宅してストリードビューで確認した時。流石に入り口まではナビしてくれないのか。でも裏道でナビ終了はダメ過ぎる。目的地で診察を受ける事が出来なかったのと、近辺の耳鼻科を調べると、どこも20分位掛かる。なので、目に止まった宇都宮の西側に渡ったトコにある耳鼻科へ、念の為に電話で診察受付時間が18時までと確認をした上でGo。17:50頃に到着して、15分後には右耳の聴力は復活、元のコンディションに戻った。万一難聴だったら、あの耳鳴りとずっと付き合う悪夢に陥るので、そんな事にならずに済んだ。
+        </p>
+        <p>
+            ●帰宅途中に近所のコンビニへ寄って、発注していた全く手遅れな耳クリーナーを回収し、動作確認。今度は全く問題無く動作して、試しに使ってみたが、医師の施術の荒っぽさを思い出して、あんなトコまで自分の耳にモノを突っ込むのは恐怖を感じて、また、時間が経ってこびり付いてしまった様なので、やっぱ自力では無理だったかな、と。施術前に耳に入れた液体の正体が理解れば、自力で...否、あの後結構「ジジィ、もーちっと労って作業しやがれ、いってーな、くそっ」と云いたいレベルで耳穴をイジられたので、あの勢いが必要なのだとしたら無理だ。
+        </p>
+        <p>
+            ●右耳が回復した後、ヨドバシへ寄ってヘッドライト有るかな?と店内を一通り巡回するも、宇都宮店ってヨドバシとしては最小規模で、各ジャンルの品揃えがミニマムなのだ。私のヨドバシ、イコール新宿本店の店舗群で、嘗て慣れ親しんでおり、あれが当たり前な感覚なんだけど、宇都宮店は所謂「ヨドバシライト版」、「ヨドバシミニ」なので、ターゲットが明確且つメジャーならば良いけど、ちょっとした捜し物やマニアックなジャンルになるとてんでダメだ。従って、ヘッドランプも結局再びAmazonから発注している。改めて商品を眺めると、残念ながら今手元にあるコレ、返品を確認不足で発送したパターンの疑いが高い。そもそも、同一本体の別業者だと、電力供給用にACアダプタ、USBケーブル、シガーソケットの3種類が普通なのに対し、私が買ったのはUSBケーブルのみ、しかも本体かUSBケーブルのどっちかが壊れてる。説明書が欠品してる時点で十分に怪しい。ホントにこー云うのあるんだね、って感じだ。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/17[Wed]</td>
+      <td class="corner_round_R w_600">初期不良 Part.2</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●マジかぁ〜、昨日届いた商品その二の、<a href="https://www.amazon.co.jp/gp/product/B06Y66SD4B/ref=oh_aui_detailpage_o01_s02?ie=UTF8&psc=1" onclick="window.open(this.href); return false;">Victagen 防水 5000Lm LEDヘッドランプ</a>が初期不良だった。症状はシンプルで「充電されない」。謎サイズの充電池が本体ベルトの後頭部に配置されており、そこにUSBケーブルから給電するタイプなのだが、どうもバッテリー周りが壊れてる様だ。USB充電器に差したUSBケーブルをヘッドランプに繋ぐと、ランプが充電中を示す赤に変わるが、暫く経つと時折勝手にライトが点滅して、更に放置してるとランプが充電完了の緑に変わる。しかし、ケーブルを抜いてランプのスイッチを押しても点灯しない。そもそも、昨日ほぼ一日ずーっと充電状態のままにしてて、部屋に戻ったらランプが狂った様にピカピカしてたので、外れ引いた感を覚えたが、やはりダメだった。
+        </p>
+        <p>
+            ●日本語説明書も欠品してるし、これホントに新品だったのだろうか?との疑いも。なので、昨日に続いて返品手続きを開始している。昨日の耳クリーナーは小さかったので、梱包をどうするか考えてたけど、返品が2個になったので、届いたダンボール箱そのまま使えば良いか。ヘッドライトは、リアルショップで現物見てゲットの気分になっている。流石に2個続くとゲンナリするわ。ヨドバシ...は仕事の状況的に無理かな、職場を出て10分後にはヨドバシに入店出来るので、出来れば行きたいんだけど。
+        </p>
+        <p>
+            ●オマケに、インパクトドライバ用に<a href="https://www.amazon.co.jp/gp/product/B00G9IVVQ4/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1" onclick="window.open(this.href); return false;">マグキャッチMINI[Anex]</a>も買ったのだが、ビットに装着して、先日使ったビスを当てて...付かねぇ。まさかの3連続パーフェクト返品率100%か?と思ったが、私が買ったビスは磁石に付かない材質のステンレスビスだった様で、ネジ類ボックスにビットを差すと、HDD固定用などの鉄製のボルトなどはアッサリと引っ付いて安堵。ヒジョーに仕方無いが、ゴミ2個は土曜日にヤマトへ行って返品する事にしよう。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/16[Tue]</td>
+      <td class="corner_round_R w_600">初期不良</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+  <a href="images/ear_cleaner_init_failture_1.jpg" data-lightbox="init_failture" data-title="電池を入れると、最後まで入らなくなる、ゴミだろコレ">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/ear_cleaner_init_failture_1.jpg" alt=""/>
+  </a>
+  <a href="images/ear_cleaner_init_failture_2.jpg" data-lightbox="init_failture" data-title="電極のアルミが剥き出し、しかも簡単に外れる始末、余りにも安物過ぎる">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/ear_cleaner_init_failture_2.jpg" alt=""/>
+  </a>
+        <p>
+            ●先程、コンビニからAmazonの荷物を回収して、話題にしたイヤークリーナーを試そうとしたのだが、残念な事に初期不良品だった。購入したのは<a href="https://www.amazon.co.jp/gp/product/B077VGBL9P/ref=oh_aui_detailpage_o00_s01?ie=UTF8&psc=1" onclick="window.open(this.href); return false;">SUPTEMPO 電動 耳かき イヤークリーナー 振動&吸引式</a>と云うモノ。評価もマズマズなので、多少なりとも期待はしていた。電池が付属してないので、ケースの後部を引き抜いた瞬間、妙な引っ掛かりを感じたが、気の所為だろ、とこの時点ではスルー。単4電池を入れて元に戻...らない。なんだコレ?と疑いモードスタート。電池を抜くと少し引っ掛かるけど元に戻る。ん、もしやサイズ合って無くて、電池入れると微妙に径が増える感じっぽい。サイドのガイドの溝も役立たずだし、下側の電極のアルミも簡単に外れて不愉快。
+        </p>
+        <p>
+            ●この際、使えれば良いので、ケースはそのままで、電源を入れてみると、弱々しく振動はしてるけど、全く吸引してない。ティッシュを当てても全く吸わない。先端に入れたノズルを外して、内部を眺めると、内部の回転して風を起こす仕組みの様だが、ソレが全く回ってない。そりゃー風も起らんわな。この手のデリケートなジャンルの場合、聞いたことない弱小ブランドはダメだね。もう一つの<a href="http://www.smile-asahi.co.jp/ayc-101.html" onclick="window.open(this.href); return false;">国内のちゃんとしたブランドの商品</a>にすべきだったよ。従って「返品申請中」。安かろう悪かろう、の典型を地で行く結果になってしまった。
+        </p>
+        <p>
+            ●取り敢えず、前述の国内品を発注しておいた。序に、使用スパンの長い香水もリピート購入。勤務先は定時が17時なので、宇都宮駅近辺で数か所の耳鼻科をチェック済みだが、残念ながら水曜日は定休日なのか、どこも休みだ。それ以前に担当業務がビジー気味な帰宅22時モードであり、とても定時でトンズラ出来る状況ではない。耳に水が入ったよーな、「ザ、ザー、キィンキィン」って耳鳴りが鳴りっぱなしで非常に気分悪いけど、体感30〜50%は聞こえてる中途半端な、我慢すれば出来ちゃうレベルなので、このまま黙って週末まで乗り切ろう。実は...耳掃除、苦手なんだよな。一部では、耳掃除は気持ち良いと云う声もあるが、そもそも耳にモノを突っ込む事自体が怖いのと、恐る恐る綿棒を差し込んでも、どこまで入れて良いものか理解らず、少し差し込んでも痛いとしか感じない。入浴時に耳から出て来てる耳垢は掃除しているので、カナル式イヤーフォンはキレイなものだが、その内側となるとちょっとね。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/14[Sun]</td>
+      <td class="corner_round_R w_600">7.1ch化(完成編)</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●自宅の音響7.1ch化が完了した。近所のコメリへ行き、M4x20mmのビスを買ったのだが、8本欲しいのに対して、小袋は6本しか入っておらず、2袋買うのか、なんか割高な気がするぞ...と視点を買えると、中袋のコーナーがあって、中袋だと50本入りで小袋2つよりも安価___小袋:168円(6本、28円/本)、中袋:328円(90本、6.56円/本)___だった。なんだこの価格設定は。私は俄に屋内DIYへのアイディアが湧いているので、これは無駄にならない予定だけど。自宅に戻り、リューターで仮穴を空けてからビスでブランケットのベースを固定して、スピーカーを設置。その後、ケーブルを鴨居の裏に這わせてオーディオラック付近から下に落として、ラック裏からAVアンプへ。アンプ側は<a href="https://www.amazon.co.jp/Amazon%E3%83%99%E3%83%BC%E3%82%B7%E3%83%83%E3%82%AF-AmazonBasics-ABAV001-%E3%83%90%E3%83%8A%E3%83%8A%E3%83%97%E3%83%A9%E3%82%B0-24k%E9%87%91%E3%83%A1%E3%83%83%E3%82%AD/dp/B0090CVJZ4" onclick="window.open(this.href); return false;">Amazonベーシックのバナナケーブル</a>を使った。音質云々ではなくて、直接続だとAVアンプを出し入れした時に切れてしまうリスクがあり、その点でバナナケーブルの方が扱い易い。
+        </p>
+        <p>
+            ●よーし、ちゃんと増設した効果も確認出来てるし、多分に主観的だが、トライは失敗ではなかった模様。しかし、実は昨日起きたら右耳の聴こえが悪くて、綿棒で掃除しても50%位しか回復していない。数年前、鼓膜に耳垢が貼り付いて、全く聞こえなくなったが、その時にお世話になって好印象の<a href="https://byoinnavi.jp/clinic/66670" onclick="window.open(this.href); return false;">結城市の佐久間耳鼻咽喉科</a>へ、また行かねばならないか?土曜日は午後も診察してるので、昨日行けば良かった。前述の作業の際に必要性を感じたヘッドランプと、耳クリーナーを発注した。果たしてソレで解決するだろうか、今回はイヤーフォン(IE80)で聞いた限りは半分程度聴こえてるので、日常生活には「一応は」支障無し。カナル式イヤーフォンを装着しても、耳垢が付く事がないので、前回同様に奥へ入り込んでしまった様だ。前回みたいに、全く聴こえずに気分が悪くなる事も無いので、火曜日に届く耳クリーナーを試してダメだったら、週末には耳鼻科へ行こう。
+        </p>
+        <p>
+            (追記:2018/01/15午前1時)入浴時、電気シェーバーを右の頬に当てると、何故か右耳の聴力が100%になる事を確認した。頬を持ち上げるだけではダメで、骨への振動がポイントみたい。しかし、この事象をググる事は出来なかった。そもそも、状況を検索条件にどう入れるのかが理解らない。思い返すと、起きた直後よりも、耳掃除をしたら悪化したので、自分で耳垢を奥に押し込んでとどめを刺した様な気がしなくもない。そうなると、耳クリーナーの素人作業では効果は見込めず、週末までこのままかも知れない。
+        </p>
+  <a href="images/giulietta_winter_ver.jpg" data-lightbox="winter" data-title="スタッドレスタイヤへ交換、これで豪雪地帯へ見物に行けるぞ">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/giulietta_winter_ver.jpg" alt=""/>
+  </a>
+        <p>
+            ●その後はクルマを洗車して、キレイになったGiulietta大梅仕様を記念撮影。超広角レンズ<a href="http://www.tamron.jp/product/lenses/b023.html" onclick="window.open(this.href); return false;">10-24mm F3.5-4.5 Di II VC HLD(Model B023)[Tamron]</a>は108度の画角で、中心から絞り込む様な、不思議な撮影結果が得られるのが面白い。これで雪国エリアに突入出来るよーになったが、<a href="http://www.data.jma.go.jp/obd/stats/data/mdrr/snc_rct/alltable/snc00.html#a42" onclick="window.open(this.href); return false;">現在の積雪情報</a>を見るに、未だ時期尚早かしらね。一度は3m級の積雪を観察してみたくて、特別豪雪地帯として名高い肘折、市町村的には<a href="https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%94%B5%E6%9D%91" onclick="window.open(this.href); return false;">山形県大蔵村</a>になるが、山形県は全域が特別豪雪地帯に指定されているので、来月にでも様子を伺いつつ行ってみようかしらね。その前に、スタッドレスのコンディションテストとして、以前訪れた<a href="http://www.kendobousai-gunma.jp/snow/detail?pointId=12" onclick="window.open(this.href); return false;">みなかみの藤原</a>にも行ってみたい。自宅から160km、下道でも3時間半と、弾丸ドライヴで5時間オーバーが当たり前な私的には近場な印象である。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/13[Sat]</td>
+      <td class="corner_round_R w_600">NMK ARCADE SOUND DIGITAL COLLECTION Vol.2</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●<a href="http://claricedisc.shop-pro.jp/?pid=124451722" onclick="window.open(this.href); return false;">NMK ARCADE SOUND DIGITAL COLLECTION Vol.2[NMK]</a>、ゲットだぜッ!!前作で、まさかのガンネイル初収録だったVol.1に続き、今度は念願のサンダードラゴンI&IIであるVol.1入手時に希望していたまんまがリリースされたので、お迎えした。去年の11月に発売されていたのだが、存在自体を知らなかったので、入手が遅くなってしまった。ゲーム音楽仲間から、基板収録版を貰っていたので、曲自体は聞き慣れたものだが、やはり公式のデジタル音源版は違う。聴き始めた瞬間にクッキリとした鮮明度を感じて、非常に嬉しくなった。ブックレットで、このゲームが1ループ4分以上と云う例に無い長さは、開発者が「道中からボス戦までをシームレスに展開させたかった」事が発端と知る事が出来たのは予想外の収穫だった。通常、シューティングゲームは1ループ1分〜1分半程度、そもそもステージの道中時間は3分程度なので、自然とそうなるのだが、恐らくずっと同じ曲が流れ続けるゲームを目指していたのだろう。結局は長い道中曲2つと、ボス曲からの構成になったので、当初の試みは崩れ去った模様。でもまぁ、私は念願の一つを手に入れる事が出来たので良し。
+        </p>
+        <p>
+            ●Giuliettaをスタッドレスタイヤへ換装した。
+<table class="tbl_2 w_600 bgclr_wht font_sml">
+        <thead>
+            <tr class="bgclr_sky">
+              <td colspan=2>
+                  タイヤ交換メモ (NeroGT→IG50)
+              </td>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+              <td class="w_200 bgclr_pbl">
+                  タイヤ交換時の走行距離
+              </td>
+              <td class="w_400">
+                  61,283km
+              </td>
+            </tr>
+            <tr>
+              <td class="w_200 bgclr_pbl">
+                  NeroGT走行距離
+              </td>
+              <td class="w_400">
+                  2,337 + 11,722 + 61,283 - 49,066 = 26,276km
+              </td>
+            </tr>
+        </tbody>
+    </table>
+    但し、2017/7/15にフロントタイヤを換装しているのだが、迂闊にも交換時の走行距離の情報が一切残っていない為、正確な情報ではない。前後に存在するメーター画像から勘案すると、タイヤ交換時は5.2〜5.3万km辺りかな。フロントタイヤの推定走行距離は8,000〜9,000kmの間だ。走行距離を管理してるNumbersファイルがあって、更新する為に開いたら7月の情報が無い事に気づいた次第、データ管理を重視しているので、自らの愚行にガッカリだ。それて兎も角、クラシカルな様相の大梅ホイールになった。コッチの方が掃除しやすいんだよな。交換後にテスト走行した時、やはりスタッドレスはフォーマルな乗り心地になる事を再確認した。その内に慣れちゃうんだけど。
+        </p>
+        <p>
+            ●自宅の7.1ch化は、サラウンドスピーカーの設置位置が決定して、穴あけ位置にマークして、設置開始...しようとしたが、付属のビスが長過ぎて、自宅には不向きな事が判明して作業中止。明日の午前中、近所のコメリで適切なサイズのビスを入手して再開する予定。音の調整をする中で、再生モード「Multi Ch Stereo Mode」ってモードの存在を初めて知った。思えば、AVアンプを替えて純粋な音質向上に満足して、真面目に音場調整を試みるのは今が初めてだったりする。試した処、これは2chの音源を全スピーカーに割り振るもので、サラウンド感は無い反面、全方向から同時に音が聴こえてくる不思議な感覚を楽しめる。最近流行りの360度スピーカーとは別の、左側3スピーカーから左ch、右側3スピーカーから右ch、センターは両chを出力し、サラウンド感は無い反面、最も迫力溢れるモードである。また、最近ウーファの出力を最大値にしているのだが、この状態でForza7をPlayすると、全ての低音が尋常でないレベルでウーファーから出力されており、好い加減イラッとする程である。ゲームの設定で音を絞っても、イマイチ低音には適用されない様で、夜間のPlay中はウーファを切る始末。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/08[Mon]</td>
+      <td class="corner_round_R w_600">インパクトドライバー FWH14DGL</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+  <a href="images/hikoki_fwh14dgl.jpg" data-lightbox="impact_driver" data-title="初の電動工具、まさか自分がこの手のモノを入手するとは思ってなかった">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/hikoki_fwh14dgl.jpg" alt=""/>
+  </a>
+            ●インパクトドライバー<a href="http://www.hitachi-koki.co.jp/powertools/diy/fwh14dgl/fwh14dgl.html#spec" onclick="window.open(this.href); return false;">FWH14DGL[日立工機]</a>、ゲットだぜッ!!つー訳で、ここ最近ドライバーを使う事が多かった事もあり、また前々から電動ドライバーの類に興味があったので、ホームセンターでトリガー引いてネジを試打したり、軽くメーカーの下調べをしてたのだが、どうせだったらお高いインパクトドライバーの方が良いだろう、と機種を選定した。しかし、実際には電動ドライバーは低トルクで精密作業向き、インパクトドライバーは高トルクで締め付け作業向き、と守備範囲が異なるもので、もしかすると私に必要なのは電動ドライバーだったのかも知れない。結果としてこの日立工機、今年6月に<a href="http://www.hitachi-koki.co.jp/topics/171101_brand/brand.html" onclick="window.open(this.href); return false;">HiKOKI</a>(読:はいこーき)に社名が変わるみたいね、のDIY向け製品をチョイス。尚、<a href="http://www.kkr.com/ja?lng=1" onclick="window.open(this.href); return false;">KKR</a>と云う世界的な投資会社に買収された事に伴う改名だが、住む世界の違う出来事なので<a href="https://www.nikkei.com/article/DGXLASDZ23HDB_T20C17A3000000/" onclick="window.open(this.href); return false;">記事紹介</a>だけで割愛する。
+        </p>
+        <p>
+            ●<a href="https://voltechno.com/blog/powertoolsmaker/" onclick="window.open(this.href); return false;">電動工具の世界</a>はナカナカ面白く、PC世界の住人な私には馴染みのない「ザ・職人」なイメージの領域なのだが、国内シェアでは<a href="http://www.makita.co.jp/product/index.html" onclick="window.open(this.href); return false;">Makita</a>(読:まきた)と<a href="http://www.hitachi-koki.co.jp/powertools/index.html" onclick="window.open(this.href); return false;">日立工機</a>が2トップ、しかもMakitaは世界シェア第2位らしい。その下には、<a href="http://www2.panasonic.biz/es/densetsu/powertool/" onclick="window.open(this.href); return false;">Panasonic電工</a>、<a href="http://www.ryobi-group.co.jp/powertools/products/category.php?cid1=1" onclick="window.open(this.href); return false;">RYOBI</a>が続き、海外ブランドの<a href="http://www.bosch.co.jp/pt/#" onclick="window.open(this.href); return false;">BOSHE</a>(読:ぼっしゅ)や<a href="http://www.blackanddecker-japan.com/" onclick="window.open(this.href); return false;">Black+Decker</a>も強烈に喰い込んでいる。ホームセンターでは、海外2社の推しの強さを感じるディスプレイになっている印象がある。何より、製品に派手さがあるのが良いのかも。初見では、BOSHE製を考えてたし。でも、ナショナリズムって訳では無いけど、何となくの信頼性から国内製にしてみた。<a href="http://www.bosch.co.jp/pt/products/?lineup=1" onclick="window.open(this.href); return false;">BOSHEのプロ向け製品</a>はカラーリングがゲームの銃器みたいでカッコイイけど、それだけの理由で40k円は出したくない。決して無駄ではないけど、高性能・高精度・高耐久性を持て余す事だろう。その点では、購入した日立工機のコレは、工具然としてて全く萌えない、残念。手にして「これが実売13k円なのか、ふーん」って感じ。
+        </p>
+        <p>
+  <a href="images/toolbox_size_success.jpg" data-lightbox="impact_driver" data-title="今回は問題無く設置OK、おっとカレンダーを別の場所へ移動しなくては">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/toolbox_size_success.jpg" alt=""/>
+  </a>
+            ●商品到着時点でバッテリー充電済みで、直ぐに使い始める事が出来た。試しにトリガー引いたら作動するので驚いた。早速、昨日購入した収納ボックスの組み立てに試用してみた。感想は「慣れが必要、最初はトリガーの掛け具合が掴めない」で、コツを掴めばギュルルンとビスが埋まっていく新鮮な感触を楽しめるが、埋める角度を考えるケースの場合、トルクの掛け方が足りなくて、ナメてしまいがち。電動ドライバーならば、回転速度・最大トルクを指定出来るのに、なんでインパクトドライバーには無いんだろう?、って常識なのだろうけど、初見な私にはそれ自体に違和感を覚える。この感じだと、電動ドライバーも買う流れになってる気がする。でも、それは次にドライバーを使うニーズが発生した時で良いかな、買っても使わないんじゃ無駄だし。
+        </p>
+        <p>
+            ●上手く使うポイントは「決めたら躊躇しないでGO」なのかな。普段のラチェットドライバよりも、遥かにラクラクにビス止めが出来たが、本体重量が1.3kgと決して軽くないので、位置合わせで腕がプルプルするのも慣れが必要。Li-ionバッテリの予備有りで充電時間35分、他社は45〜50分程度掛かるらしい。万一両方使い切っても小休止の間に復活するので、使い勝手が良さそう。本体セットには、2ミリ/プラスのビット1本しか付属しないので、序に純正のドライバー+ドリルのビットセットを購入した。追々、必要に応じてビットを充実していこう。それから、ビットにマグネット機能を付与するアタッチメントも用意しよう。オーナーになったので、今度ホームセンターに行ったら電動工具コーナーをよく見てみたい。
+        </p>
+        <p>
+            ●結果として、収納ボックスの設置は無事に完了した。下のオーディオラックとの色もバッチリで、後付感が少なくて、左右へのネットワーク機器配置も想定通りになった。その一方、スピーカーの件は未だ完了していない。位置決めは大体出来たけど、室内を大回りにケーブルを這わして、オーディオラックの後ろからAVアンプに繋ぐ作業が残っている。収納ボックス増設の件で、私のやる気が店じまいになってしまった。続きは今週末にでも。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/07[Sun]</td>
+      <td class="corner_round_R w_600">7.1ch化(調整編)</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●自宅の音響<a href="http://www.ari-web.com/service/kw/sound/surround-sp6.htm" onclick="window.open(this.href); return false;">サラウンド7.1ch</a>化の作業中だ。AM-5IIIサテライトスピーカーにブラケットをセットして、AVアンプとケーブルで繋いで、鴨居に引っ掛けて位置合わせ中。今回のスピーカーは、サラウンドスピーカーとして、視聴ポイントの横から少し下げた100度に仮配置し、これまでサラウンドスピーカーだった、Boseの過去の遺物、120[Bose]は、サラウンドバックとして、背後からの音を担当して貰う。7.1ch化の体裁は整ったので、シドニアの騎士 第九惑星戦役を開封して、視聴したのだが、残念な事に北米版の自主規制なのか、最近は字幕強制度が前にも増している様で、自宅のblu-rayドライヴ搭載ゲーム機でのテスト結果は、
+<ul type=square>
+    <li>XboxOneS : blu-rayアプリで再生を弾かれてる。ウザい、MSウザい。
+    <li>PlayStation4 : 再生は問題無いが、字幕OFFが無効化されている。
+    <li>PlayStation3 : 同上。
+</ul>
+XboxOneSは絶望的な結果で、以前PlayStation3は、字幕無効化出来たものだが、最近追加された「国コード」と云う利用者的には無駄なルール追加に伴い、システムVer.Upして規制が強化された模様。
+        </p>
+        <p>
+            ●字幕表示は興が失せるなぁ、なんとかならんかね?数年前に導入してメールアドレス移行でミスって3ライセンス消失した<a href="http://jp.macblurayplayer.com/macgo-mac-bluray-player.htm" onclick="window.open(this.href); return false;">Mac blu-ray Player[Macgo]</a>を再導入する?しかし、なんかライセンス値上がりしてるなぁ、どうしようかなぁ...とネットを調べていると、<a href="http://www.leawo.org/jp/blu-ray-player-mac/" onclick="window.open(this.href); return false;">blu-ray player Mac[Leawo]</a>と云うFWの存在を発見、App StoreからDLして、iMacの外付けblu-rayドライヴ(BL-RW)にメデイアを挿入して、マウントするも、何も起こらない。Macはblu-rayを無視するOSなので、ソフトを起動すると、一応メディアの存在は認識してた、けど自動再生してくれない。起動メニューからblu-rayの第一階層を指定すると、やっと再生がスタートした。
+        </p>
+        <p>
+            ●結果として、設定画面から字幕を消去して快適に視聴する事が出来た。但し、時折再生速度が遅くなったり、一部を勝手にリピートしたり、と怪しい挙動を示すが、前述の有償ソフトも当時は「取り敢えずblu-ray再生出来ます」レベルでUIは酷いし、安定性はイマイチだったので、無料でこれだけ出来れば十分だろう。変な広告とかも無いし。音の試聴に話を戻すと、リアを4台化した事で、背面の音場が強化されたみたい。音が真後ろから聴こえる様になってビックリした。狭い再生環境だと、7.1ch化は無駄、と云う情報も多かったが、ウチの環境の場合は、出力バランスが元々フロント寄りになってたので、釣り合いが取れたのかも。出来ればセンターをもっと控え目にしたいけど、サラウンドの角度と共に、この辺りは要調整かな。
+        </p>
+        <p>
+            ●もう一つのオーディオラックの拡張の件は、夕方から上三川のジョイフルへ行き、幅40cm、高81cmタイプをチョイスした。幅59.8cmタイプもあったが、上の奥が鴨居と干渉する可能性があったのと、ギリギリだと地震で崩れやすくなる恐れがある...まぁ、崩れるレベルの地震が来たら、40cmだろうが、60cmだろうが崩れるだろうけど、何となく下に余裕があるサイズの方が耐える余地はあるのでは?と。尚、帰宅して鴨居の高さを測ったら、ぎりぎり接触してたっぽい、買わなくて正解だった。今日のラックは未だ組み立てておらず、板を1枚持ってきて、今度はオーディオボードと似てる色である事を確認して安堵。やっぱ重ねるのに色違いはダメだよな。この3連休、昨日今日と動き過ぎになって、休みなのに無駄に疲れてしまった。なので、最後の明日は、ボックス設置とスピーカーの調整だけで、のんびり過ごすとしよう。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/06[Sat]</td>
+      <td class="corner_round_R w_600">ビーズソファのビーズ補充は大変!!</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●午後から学園都市のグランステージ筑波へ行き、下記のモノやその他色々買って来た。
+<ul type=square>
+    <li>ビーズソファ用補充ビーズ
+    <li>オーディオラックの上に乗せる収納ボックス
+</ul>
+...が、この2つは共にやらかしてしまった。先ず、補充ビーズだが、予めニトリで同様の0.3〜0.3ミリ径の商品を一袋(500g)購入済みだったが、ウチに人をダメにするソファは2個あるので、<a href="http://www.flex-fpc.com/index.html" onclick="window.open(this.href); return false;">フレックス販売</a>の補充ビーズを追加購入して、2個補充しようと目論んだ。1個目はニトリのモノを使って、導入管がラップ芯の径に合わせてあったので、先端を切ってラップ芯に被せて、ビニールテープで固定し、ソファ側の挿入口にも入れて、ゴムで半固定。これだけで、取り出す時にブパッとソファ側からビースが吹き出した程度___この時はコレで十分驚いたものだが...___で、初めてにしては自己採点80点の結果になった。次
+        </p>
+        <p>
+  <a href="images/bears_flex_catastrophe.jpg" data-lightbox="blu-ray" data-title="静電気が酷くてビーズが内側にビッシリ、もうこれ以上出て来ない。欠陥品だろコレ">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/bears_flex_catastrophe.jpg" alt=""/>
+  </a>
+            ●にフレックスの袋を取り出したが、先ず導入管が余りにも短く、結んでるソコを緩めると、内部が既に静電気状態なのだろう、開ける前からビーズが管の部分に入り込んで来た。多少のバラ巻きは仕方無い、と先端を切ったが、中途半端な大きさで、静電気で暴れてばかりで、全然ソファに流れていかない...ので、ビースが飛び交うのを承知で、サイズ拡張の切断。この時点で、私の周りにはビーズが大量散布されており、気分は萎え萎え。良くブチ切れなかったもんだ、まぁ、ブレ切れてビーズ撒き散らしても困るの私だし、と辛うじて冷静になった。しかし、私に明確な害意を示したフレックス販売への殺意は否めない。
+        </p>
+        <p>
+            ●途中で止めるワケにも行かないので、作業を継続する...も、未だ明らかに中に結構な残量があるのに、袋内部が静電気状態なのだろう、周りにビッシリと貼り付いて全く出て来ない。幾ら振っても解消されないのでね途中で諦めた。勿論、導入管を抜いた瞬間にビーズを撒き散らしたのは云うまでもない。余りに酷くて画像取るの忘れるレベル。こんなに怒りを覚えるのは久々なので、「お前のトコのこのゴミは仕様なのか?この程度で?ニトリを見習えボケ」って内容を丁寧に書いたクレームメールを出しといた。確実に無意味だけど、怒りを溜め込まずに放出しておく事が重要。今回の残念な経験から、もしも、ビーズソファへビーズを補充する場合は、ニトリ製を強くオススメしておく。
+        </p>
+        <p>
+  <a href="images/toolbox_size_misstake.jpg" data-lightbox="blu-ray" data-title="久々にやってもぉたぁ〜、心底ガッカリ">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/toolbox_size_misstake.jpg" alt=""/>
+  </a>
+            ●気を取り直して、収納ラックを組み立てて、オーディオラックの上にはネットワーク機器があるので、それを考慮して、背板の一部に穴を開けて、ケーブル類が通る様にして、仮載せ...したら、あれ、サイズ合ってないよ?購入前、オーディオラック、収納ボックス共に60cmである事を確認した上で購入したのだが、まさか?...と実測すると、オーディオラックは59cm、収納ボックスは61cmだった。なんじゃソリャ。そんな訳で大失敗、ちゃんとラックの幅を実測しておいて、メジャー携行して確認すべきだった。このボックスどうしてくれようか。使い道が思い浮かばない。上記のビーズの件との合わせ技一本で、私のやる気ゲージは消滅したので、ズレたまま放置モード。尚、一番下が高いのは、ココにヘッドフォンを格納する為だ。コレ、どうしようかしらねぇ。地震起こったら大惨事になるので、先ずは降ろそうね。
+        </p>
+        <p>
+            ●廉価帯の収納ボックスだと、ネットの相場は高過ぎる。価格帯が上がると逆転するんだけど、5〜10k円程度の汎用品では、リアルショップへ行った方がマシだ。オーディオラックのダークブラウンに色を合わせたいし。グランステージへリトライするか、上三川へ行ってみるか...。ネットを調べてると、「幅59.2cm」って幅サイズが正式に存在している模様。オーディオラックも大体その幅だ。横がハミ出てるのは見苦しいので、それに合わせれば良いんだな。
+        </p>
+        <p>
+  <a href="images/blu-ray_20180106.jpg" data-lightbox="blu-ray" data-title="共に第二期作品...の北区米版">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/blu-ray_20180106.jpg" alt=""/>
+  </a>
+            ●そんな訳で、昨日話題にした7.1ch化は未実施。折角7.1ch化合わせで、
+<ul type=square>
+    <li><a href="http://toaru-project.com/railgun_s/" onclick="window.open(this.href); return false;">とある科学の超電磁砲S</a> : blu-ray/DVD
+    <li><a href="http://www.knightsofsidonia.com/" onclick="window.open(this.href); return false;">シドニアの騎士 第九惑星戦役</a> : blu-ray
+</ul>
+...の北米版を購入したのだが、キマリが悪いので、パッケージ未開封。レールガンSは、1級フラグ建築士とアクセロリータのバトル再構成と、後半の幼女フェブリが可愛い。シドニアは、OP曲がカッチョ良いのと、音を見直した環境ならば、戦闘シーンが迫力溢れるモノと期待している。もう1個のスピーカーにもブラケット付けて、適当な位置に設置して、ケーブル取り回して、AVアンプをラックから出して、ケーブル繋ぐだけ...否、結構面倒いなコレ。位置合わせはテキトーじゃ台無しになるので、慎重にやらねばな。明日にでもやりたいが、果たして。幼女戦記の北米版リリースが楽しみである。国内版を買わない私は、ファン失格なのかも知れないが、国内版の相場は私には許容出来ない。たった2話でしか収録してないって何なの?二層blu-rayって約50GBだけど、容量余りまくってるんだろ?アニメ業界の歪なお金の分配を、制作寄りに再構成すべきなんだろうね、他人事だけど。アニメ制作って、裕福な出身じゃないと生活が成り立たない、超ブラックと知りつつ飛び込む、修行僧みたいなイメージだ。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/05[Fri]</td>
+      <td class="corner_round_R w_600">7.1ch化(準備編)</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+  <a href="images/bose_ub20_bracket.jpg" data-lightbox="bose" data-title="約5年振りに現役復帰のAM-5IIIさん">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/bose_ub20_bracket.jpg" alt=""/>
+  </a>
+            ●ず〜っと先送りにしていた、AV音響の7.1ch化に着手した。スピーカーは余ってるのに、ナカナカその気になれなくて、<a href="https://www.denon.jp/jp/product/HomeTheater/AVReceivers/AVRX4000" onclick="window.open(this.href); return false;">AVR-X4000[Denon]</a>を導入してから4年も経過してしまった。対象のスピーカーは、前世紀の遺物、<a href="https://www.phileweb.com/ec/?p=4913" onclick="window.open(this.href); return false;">AM-5III[Bose]</a>のサテライトスピーカー。60mmドライバx2の構成で、上下で左右に向きを変えて指向性を調整出来るのがイカす。テレビボードにず〜っと眠っていたモノだ。
+        </p>
+        <p>
+            ●コレを蘇らせる為に用意したのは、<a href="https://www.bose.co.jp/ja_jp/products/speakers/speaker_accessories/ub-20-series-ii-wall-ceiling-bracket.html#v=ub20_acc_black" onclick="window.open(this.href); return false;">UB-20 Series II Wall/Celling Bracket[Bose]</a>と云う純正のスピーカー固定具。これで鴨居に固定して、サラウンド・バックとして増設する。6畳サイズだと、バランスを崩すだけとも見掛けているが、どうにもダメだったら、開き直ってフロント・ハイにして、前面音量に振り分ける。多分、音楽の迫力は調整次第で増すだろう。それと、安いスピーカーケーブルの10メートルを2本で、コストは約10k円。明日、設置する予定。
+        </p>
+        <p>
+            ●会社からの貸与PC、ThinkPad T420が逝かれた。少し前から、Explorerのウインドウ開けるのに1分以上掛かったり、Chrome起動するのに3分掛かったり、まるでWin95時代の様な挙動を示していたので、チェックディスク、過去プロジェクトの大量データ削除、不要なソフトをアンインストールして、無駄なサービス停止したり、とやってみたが、そもそもディスクの不良セクターが閾値を越えてたっぽい。データ削除後にデフラグ検査するも「断片化0%」、そんな馬鹿な、コレダメだろ、と空きエリア増加は寧ろトドメを剳したのかも。今夜、会社への提出物を作成する為に、今年初めて起動したが、起動直後に一瞬ブルースクリーンが出て、Lenovoのリカバリーモードが発動するも、修復出来ずに「修復できない問題を発見しました」とデスレポートと「工場出荷状態に戻しますか?」と軽くお誘いして来るのでシステム終了...を念の為に5回繰り返したので諦めて、本社に故障の旨を伝えた処。代替機はショボいPCなんだろうな、提出物用途だから良いけど。大体が、ソフト会社の癖に、提出物のフォーマットがExcelってどーよ?私以外の多くは、自宅のWindowsPCにOfflice入りで使用してるのが当たり前の様の感覚なんだろーけど、仕事から隔絶したい事もあってMacな私からすると、公私混同、かなり異常である。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2018/01/03[Wed]</td>
+      <td class="corner_round_R w_600">小休止</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●明日から仕事なので、今日はのんびり過ごしていた。後述の理由により、久々に仮想OS環境を作って遊んでいた。試したのは以下の通り。つーか、遊びで疲弊してる気がする。
+<ul type=square>
+    <li><a href="https://www.haiku-os.org/" onclick="window.open(this.href); return false;">HAIKU</a> : MacOSXの基礎システム候補の一つだったBeOSの残骸。「俳句」のローマ字表記、何故「俳句」なのかは不明)。起動OK。
+    <li><a href="https://winworldpc.com/download/41c5bee2-82ac-c2ac-18c3-9a11c3a4efbf" onclick="window.open(this.href); return false;">OpenStep R4.2</a> : MacOSXの基礎システム、ジョブズが持ち込んだもの...の最終版。起動出来ず。
+    <li><a href="https://www.neverware.com/#introtext-3" onclick="window.open(this.href); return false;">ChromeOS</a> : 今時のWeb閲覧メインな方々にはベストかもしれないWebメインのシステム。起動OK。
+    <li><a href="https://www.centos.org/download/" onclick="window.open(this.href); return false;">Cent OS</a> : 仕事で触った事のあるOS、個人的に入れるものではなかったかも。起動OK。
+    <li><a href="http://linuxmint-jp.net/download.html" onclick="window.open(this.href); return false;">Linux Mint</a> : ポップな外観でUIに優れたOS。起動OKだが、完全日本語化が面倒だった。
+    <li><a href="https://elementary.io/" onclick="window.open(this.href); return false;">elementary OS</a> : MacリスペクトなOS、外観はSnow Leopardの頃に似てる。起動OK。
+</ul>
+PowerMacG4の頃___2005年頃かしら?___に入れた事のあったNextStepは、インストール途中でハングってダメだった。今回は生産性ゼロのお遊びなので、躓いてググッても解決しない場合は追求はせず。それ始めたら仕事みたくなっちゃうし。触ってて好印象だったのは、elementaryOSかな、MacOSXから失われたスマート感が好ましい。ChromeOSも良いね。Macにも入れられるのかな?MBP2010をChromeOSマシンにするのも面白いかも。でも、メインのパワー溢れるマシンに入れる必要性は感じなくて、飽く迄も一線を退いた旧型の再利用方法として有効かな?レベル。但し、タブレット持ってる人には不要、と云う微妙な立ち位置。
+        </p>
+        <p>
+            ●全体に云える事は、Macの日本語キーボードだと、[かな][英数][Cmd]が独特なので、日本語入力がスマートに出来ない。過去に使ってたASCII配列のかなキーボードならば、かな表記以外はASCIIキーボードで、[Cmd]キーは[Alt]キー相当になるので、スムーズに仮想OSもつかえたものだが、今時そんなの売ってないし。そんなキーボードの組み合わせで自然な日本語入力環境を作るのが面倒臭かった。あと、やっぱ仮想なのでワンテンポ挙動が遅れるのがストレスかな。この辺り、<a href="https://www.parallels.com/jp/landingpage/pd/general/" onclick="window.open(this.href); return false;">Parallels Desktop</a>はレスポンス良いらしいので、リンク先にあるトライアル版でお試しするのも悪くないかも。ナビの更新の為にWindows環境が必要___<a href="http://pioneer.jp/carrozzeria/carnavi/v_up/" onclick="window.open(this.href); return false;">パイオニアのナビ更新</a>のツールが、この御時世にWindows専用なのだ__なので、導入を検討中なのだが、Bootcampだと、怪しくて面倒な手順を踏まないと外付けボリュームにインストール出来ないので、いっそ並列で動作するParallels入れてはどうか?と思ってる次第。
+        </p>
+        <p>
+            ●義兄弟、昨日はお疲れ。つー訳で、恒例の新年OFFだった訳だが、カオス氏は早目の帰宅で、余り時間が無かったのが残念。私の休みが明日までだったら良かったのにな。おめでたい話も聞いたのと、最近は近所、自宅から僅か200メートルの営業所に居る事が多い事も聞いたので、土曜日にでも暇を見て遊びに行くのも良いのかも...って、その「暇」なのかを知る手段が必要だな。激し〜く今更だが、LINEのグループを作るべきなのかも知れない。今時掲示板ってのも、手段はデジタルだけど、なんか手紙交換してるみたいな感覚がキライじゃないんだけど、即時性が必要なケースもある訳で。それと、割と最近にIHクッキングヒーターを導入してるんだけど、今回の為に3〜4人向けの鍋を用意するも、残念ながら出番が無かったり。この残念な結果も避けられた事だろう。
+        </p>
+        <p>
+            ●瓏氏が持って来た<a href="http://girls-und-panzer.jp/" onclick="window.open(this.href); return false;">ガールズ&パンツァー劇場版</a>を視聴した。試しにTV版第一話を見て10分で中断したものだが、戦車バトルがメインならば観れなくもないな、キャラは私のストライクゾーンから遥か彼方なので、戦闘だけやってた方が良い。私はリアスピーカーの横に居たので良く理解らなかったが、マトモな音響での視聴を楽しんで貰えただろうか。DenonのAVアンプには、「Audyssey」と云う音場補正機能があって、AVアンプのターゲットの場所___ベストは50cm位手前だけど___に座ってもらったんだし。Boseのサテライトスピーカーが1セット遊んでるので、鴨居に固定するブラケット___専用品だが、ヨドバシ宇都宮に在庫ありを確認済み___と、AVアンプと繋ぐケーブルを用意して、7.1ch化しようかしらね。そうなると、
+<ul type=square>
+    <li>邪魔なYAMAHA製ピアノを撤去する!!
+</ul>
+...が、2018年の目標の一つなのかも知れない。演奏者だった姉からの同意は取れてるけど、業者に連絡するのが億劫でねぇ。
+        </p>
+        <p>
+            ●夕食の為に下妻のイオンへ行った後、Macの画面共有___iMac2015へMBP2015からリモート接続して、iMac2015のデュアル画面をMBP2015の画面へ縮小/100%表示__を紹介したり、<a href="https://itunes.apple.com/jp/app/vnc-viewer-remote-desktop/id352019548?mt=8" onclick="window.open(this.href); return false;">iPad/iPhone用のVNC Viewer</a>を入れて、iPhone6からiMac2015をリモートコントロールしたりする流れで、仮想環境の話題になって、<a href="https://www.virtualbox.org/" onclick="window.open(this.href); return false;">VirtualBox</a>の最新版をDLして、前述のHAIKUのインストールを試すも起動出来なかったり...って、コレが前述の今日の行動のトリガーである。結局、瓏氏を見送った後、リトライしたらあっさりと起動した、原因は不明。
+        </p>
+      </td>
+    </tr>
+  </table>
+  <p>
+</body>
+</html>
+

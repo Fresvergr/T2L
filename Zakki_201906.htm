@@ -1,0 +1,159 @@
+<html>
+<!-- 作成日 2009-08-07 23:47 -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+<title>思考戰車's Labo Ver.3</title>
+</head>
+<body>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/jquery-1.6.3.js"></script>
+  <script type="text/javascript" src="js/jquery.corner.js"></script>
+  <script type="text/javascript">
+   $(function(){
+     $(".corner_round_L").corner();
+     $(".corner_round_R").corner();
+   });
+  </script>
+</head>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2019/06/15[Sat]</td>
+      <td class="corner_round_R w_600">WindowsPC発注</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+        <p>
+            ●火曜日の夜、再び深夜の魔買い物が発動し、Window10ノートPCを発注した。例によってモデル名は秘密。前回の最後でチラッと触れたけど、それ程本気度は高くなかった。iMac2015で利用しているParallelsの、Macと仮想とは思えぬWIn10をシームレスに1台で並列実行出来るのは魅力的だけど、ハード周りになると制限が掛かって「所詮は仮想環境なんだよなぁ」と限界を感じる事や、意図せずUSB-DACが仮想Win10側でロックされてたり、外付けUSB-HDD内の1台のパーテーションの一つをFAT32に変えてもParallelsから認識されなかったり__HDD単位でWin10からフォーマットしないとダメっぽい____、Bootcampと違ってDirectXの最近のバージョンをサポートしてないので、ゲームが動かなかったり、などの普段からの不満があった。とは云え、iMac2015は未だに現役スペック___先月Web上でBTOしたゲーミングPCと比較すると、ベンチマーク値は半分程度に過ぎないけど___なので、今回は「マトモなスペックのノートPC」に落ち着いた。流石に衝動買いで400k円オーバーは出せないし、ゲーミングPCを選択する場合はしっかり調べた上で発注する。
+        </p>
+        <p>
+            ●中国生産品の様で、到着予定日は再来週6/26。進捗状況をWebで確認出来るのだが、本体は「Ordered」から変化なし、同時発注した小物パーツだけが「Shipped」と変化して、日本へ移動中の様だ。あんなの日本に幾らでもあると思うし、それだけ先に届いてもなぁ。現在の予定は、「6/19までに発送(Expected to Ship)」で、「6/26までに到着(Expected to Arrive)」との事。出来れば来週末に届いて欲しいものだ...と云っても、別に急ぎでも無いので、納期通りに初期不良ではない個体が届いてくれれば良い。数日経って、冷静になると、「あれ?MBP2015にbootcampでWIn10Pro入れれば良かったのでは?内蔵SSD512GBと、ぎりぎり許容出来るサイズだし」と、放置モードのMBP2015の存在を思い出したが、後の祭りである。
+        </p>
+				<p>
+						●ゲームエミュハードのRespberry Piは、少し調べて、MAMEで作動するゲームは、キーボードを繋ぐとPC/Macと同様にゲームのシステムに介入出来る事が理解った。しかし、RetroPiと呼ばれている、このシステムで"Arcade"として扱われているエミュ、これの各ゲームのテストモードに入る方法が今の所不明。一例として、CAVEの横スクロールシューティング「プロギアの嵐」(2001年)の場合、[ショット][ボム][連射ショット]の3ボタン構成なのだが、3ボタン目の初期設定がOFFになっているのが困り者。マトモに攻略する為には、これが解放されてないと話にならない。他タイトルを遊びつつ調査を進めよう。あと、3月に購入した<a href="https://shinka-japan.com/products/joystick_f500/" onclick="window.open(this.href); return false;">マルチプラットフォーム対応ジョイスティックF500[Mayflash]</a>は、純正パッドと接続してハードに誤認させる仕組みなので、単独だと使い物にならなかった、残念。RAP"隼"のレバーとボタンを、三和+セイミツ製へ換装しようかな?とか考え中。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2019/06/09[Sun]</td>
+      <td class="corner_round_R w_600">Raspberry Pi</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+  <a href="images/NikkoBox_1.jpg" data-lightbox="Emu" data-title="Info">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/NikkoBox_1.jpg" alt=""/>
+  </a>
+  <a href="images/NikkoBox_2.jpg" data-lightbox="Emu" data-title="Info">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/NikkoBox_2.jpg" alt=""/>
+  </a>
+        <p>
+						●俄に熱を上げているエミュレーターゲームハードのパンドラボックス、レバーとボタンを交換して、連射装置も用意する状況だが、その一方で「イチイチ隣の部屋からパンドラボックスが入ったダンボールを持って来て、設置するの超面倒」とも思っていた。そこに深夜の魔買い物が発動した結果、<a href="https://www.amazon.co.jp/Whatsko-%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%83%91%E3%83%B3%E3%83%89%E3%83%A9%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9-%E5%AE%B6%E5%BA%AD%E3%83%9F%E3%83%8B%E3%83%86%E3%83%AC%E3%83%93%E3%82%B2%E3%83%BC%E3%83%A0%E6%A9%9F-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88Arcade-NEOGEO%E7%94%A8%E4%BA%92%E6%8F%9B%E6%A9%9F/dp/B07N5LQ2PD" onclick="window.open(this.href); return false;">日光ボックス(PandraBox7S) 14000 in 1[Whatsko]</a>と云う超絶怪しい装置を発注して、本日届いた。商品構成にPS3レイアウトのパチモン低品質有線パッドが2個付属している時点で劇薬レベルの怪しさが炸裂。Amazonやネットでのレビューは概ね好評だが、現物を目にすると、ホントに大丈夫なのだろうか、と一瞬ギクリとした。
+        </p>
+        <p>
+						●ハード的には<a href="https://ja.wikipedia.org/wiki/Raspberry_Pi" onclick="window.open(this.href); return false;">Raspberry Pi(読:ラズベリーパイ)</a>と云う、数年前からコンパクトなLinuxマシンとして、基板を自作して、制御プログラム組む様なマニアな方々の間で人気のジャンル。この個体は、最新の「Raspberry Pi 3 Model B+」。OSはMicroSDに入っていて、この装置では、ナニかのLinux____DebianベースのRaspbian___をベースに、Arcade, MAME, FC, MD, N64, PSP, GBA, GB, GBC, GG, NPC PC-Engine, SG-1000, NEOGEOなどの多種多様なゲームエミュレータをブチ込んだブツである。コレを14k円で入手したが、「本体+趣味の悪くないケース、SanDiskのMicroSD-128GB、HDMIなどのケーブル、パチモンのPS3風パッド2個、ゲームエミュを組み込んだシステム」と捉えると、私的には適価である。トータルで14000タイトル収録らしいが、私に用があるのはArcade及びMAMEだけなので、タイトル数は些細な要素であり、「<a href="https://hori.jp/products/p4/p4_rapvH_hs/" onclick="window.open(this.href); return false;">RAP "隼"</a>が問題なく接続出来るか?」の一点をクリアしている事が肝要。
+        </p>
+        <p>
+            ●結論から云うと、問題なくRAP"隼"を使って業務用ゲームをPlayする事が出来た。これで、「あ、達人王やりたい」と思ったら、ブラビアの左下に置いてある日光ボックスにRAP"隼"を繋いで電源ONし、ブラビアをHDMIの3番にして起動するのを待つだけで良くなった。デカい図体のPandraBox6Sは、ゲームエミュ界隈を理解する為の授業料として、保管しておく。現在は、MicroSDのデータをイメージファイル化してバックアップしている最中だ。この行為は販売元が「もしも消えちゃっても、手元にバックアップあれば直ぐに戻せるので、各自でやっておいてね。」と推奨していたので、ソレに従った。このバックアップを行う際、Macでは隠しパーテーションにアクセス出来ず___ターミナルからコマンド打てばアクセス出来たかも?___、ParallelsのWin10Proからアクセス出来たのだが、そのドライブ指定で少し面倒な事があったので、純粋なWindows10のハードウェアがあった方が良いかなぁ?と思い始めている。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2019/06/08[Sat]</td>
+      <td class="corner_round_R w_600">Guilietta 77,777km</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+  <a href="images/Giulietta_77777.jpg" data-lightbox="Giulietta" data-title="Info">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/Giulietta_77777.jpg" alt=""/>
+  </a>
+        <p>
+            ●3日前の事になるが、我がGiuliettaの走行距離がオール7、つまり77,777kmを突破した。現時点、Giuliettaのコンディションは順調そのもので、強いて挙げれば、ステアリングの右スイッチ部に、3年前(?)と同様の亀裂が入ってしまった。見た目だけの問題で、使用上の問題はない。その付近は、塗装剥がれの部分に当たり、取り敢えずでタッチアップペンを塗ったら、予想に反して年間単位で安定しており、当時にきっちりキレイに塗り塗りすれば良かったと軽く後悔している...ので、機会を見て前述の亀裂を含めて塗り直しをしたい。梅雨が明けた後かな。
+        </p>
+        <p>
+						●タイヤの前後で山の残りにズレがあるが、ノーマルタイヤに入れ替えて2ヶ月では見た目では何も変わっていない。週末ドライヴなどでタイヤを減らす運転してないし。このまま推移すると、4本纏めてタイヤ交換になりそうな印象、交換時期は秋以降だろうか。Giuliettaのオーナーになって6年目になるが、現時点では積極的に乗りたい車種は存在しない。アルファロメオは、FCAグループの思惑でマセラティ的な高級路線にシフトするつもりの様なので、次はFCAグループ以外からの選択になるだろう。Giuliaは最上位のQVと云う、1000万クラスでフェラーリV6を搭載するグレード以外、魅力を感じない。一縷の望みは124スパイダーがカッコ良くなる事だが、2019年モデルも殆ど代わり映え無く、1750ccの上位エンジン搭載グレードは噂も出ない。Giuliettaの場合は、元々300psを許容する強度構造なので、ほぼエンジン積み替えだけでグレード展開しているが、124スパイダーはロードスターベースなので、事情が違うもかも知れない。595や695と云う尖った存在と比べると、現状の毒無しエセサソリは欲しくない。
+        </p>
+        <p>
+						●PS Plus会員特典で、<a href="http://borderlands2k.jp/DDC/index.html" onclick="window.open(this.href); return false;">6月はボーダーランズ ダブルデラックス コレクション[2K]</a>がたったの100円で販売されているので思わずゲット。そして、以前から気にはなっていたボーダーランズ プルシークエルを少しだけPlay。取り敢えずドンパチングしたいので、ガンナーっぽいローブリンガーをチョイスして始めている。このゲームはMacで300時間ほどPlayしていたボーダーランズ2の後日談的な内容っぽくて、2のPlay中、月の横に並んでたH型の超巨大建造物と月が舞台の様だ。やり始めなので仕方ないけど、初期の武装が貧弱過ぎる。あと、スキルツリーのビルドはテキトーにやると大失敗する経験があるので、そこだけは攻略Wiki情報を解禁しよう。但し、スタンバッてるタイトル幾つもある現状、突発的に入手したこのゲームを継続するのか自体が怪しい。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2019/06/02[Sun]</td>
+      <td class="corner_round_R w_600">千石電商</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+  <a href="images/JoyStick_Parts.jpg" data-lightbox="JoyStick" data-title="こんなパーツ買うなんて、まるでガチの様だ。しかし、今の私にはソレは当てはまらない。">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/JoyStick_Parts.jpg" alt=""/>
+  </a>
+        <p>
+						●昨日話題にしたパンドラボックスのコントロール周り、レバーとボタン、それと連射装置を入手する為、アキバへ行って来た。行き先は、昨日挙げた<a href="https://www.sengoku.co.jp/shop_04.html" onclick="window.open(this.href); return false;">千石電商ラジオデパート店</a>と、レトロゲーム専門店の<a href="https://www.beep-shop.com/" onclick="window.open(this.href); return false;">BEEP</a>。在庫の安全性から、先ずはBEEPへ。レトロゲームハードや業務用基板には興味が無いので、この手のショップには行く事がないけど、行ってみると昔の思い出が湧き上がるグッズが盛り沢山で、うっかりアレコレ買いそうになる...けど、ニワカな勢いでこの手のモノを買うと後悔するので、目的の<a href="https://www.beep-shop.com/ec/products/detail/641" onclick="window.open(this.href); return false;">ボリューム連射基板 RF-001</a>のみゲット。
+        </p>
+        <p>
+            ●続いて千石電商へ。最初は本店に向かい、店内を巡回するも、ゲーム関連バーツは全く存在しない。何故だ?と、階段に「ゲームレバーやスイッチ類はラジオデパート店へ」との案内がある事を発見。下調べしてなかった自分が悪いので、珍しくアキバで最もマニアックな高架下のラジオデパートエリアへ行き、一周りしてやっと千石電商を発見。ったく、どこも地味過ぎて区別つかないんだよ。ラジオデパート店は、ゲームのジョイスティック専門店の様で、レバーとボタンが大量に陳列されており、ゲーセンの「1Coin 100円」の銀色のシールが売ってたり、ゲーセンから退いて久しい私も、ちょっとトキめく空間であった。ここでは、三和製レバー、先端のボール2個、セイミツ製30ミリ径ボタン12個を購入した。
+        </p>
+        <p>
+						●そして、結果的には未遂に終わったのだが、アキバへ向かう寸前に、<a href="https://akiba-pc.watch.impress.co.jp/docs/wakiba/find/1187847.html#mx1carbon3_s.jpg" onclick="window.open(this.href); return false;">旧型ThinkPad X1 Carbonが39,800円</a>との情報を得て、昨日付の記事じゃぁ、マトモな個体は無いかもなぁ?とか思いつつも、記事のショップである<a href="http://www.tce.co.jp/pcs/pc_comfull.html" onclick="window.open(this.href); return false;">PCコンフル</a>の2店舗をチェック。まぁ、予想通り画面に傷やドット欠け、モワレ有りなどの訳あり品しか並んでない。常に目にするモニタに難があるのは、幾ら安価でも私的にはノーサンキューなので、購入は自粛した。そんな私の目の前で次々とお買い上げになる方々が居たので、そんな方々にとっては、モニタの傷は些事に過ぎないのだろう、私には無理だが。ThinkPadを中古で買うとしたら、メモリ換装出来るX270系がオススメなのだが、残念ながら今日のアキバには存在していなかったので、相場は不明だが、軽くググると60〜70k円辺りの様だ。とは云え、買っても特に何をするワケでもないので、わざわざ買う必要性は無いのであった。自宅に戻って冷静な状態で前述の2015年式ThinkPad X1 Carbonをググると、Corei5でメモリ8GB固定だし、ビデオ貧弱だし、通常の相場は55k円程度と、私が所有するMBP2015とは比較にならない低スペック、こりゃあ買わなくて正解だったよ。
+        </p>
+  <a href="images/JoyStick_Parts_Changed.jpg" data-lightbox="JoyStick" data-title="カスタムして、初めて自分のモノになった気がする">
+    <img class="bdr_5 float_l clr_wht w_400" src="images/JoyStick_Parts_Changed.jpg" alt=""/>
+  </a>
+        <p>
+            ●帰宅して落ち着いた後、一先ずレバーとボタンを交換した。ボタン色の配置はXbox360に似せたものだ。6ボタンの配線が間違ってないか、動作テストする為に、ストゼロ3を自身初Play。Ryuで3人まで倒して、各ボタンとレバーの具合を確認した処でテスト終了。うん、やっぱゲーセンスペックのレバー・ボタンはイイ感じ、換えた事が嘗て慣れ親しんだ感覚で理解る。連射装置はハンダ付けが必要で、自宅からコテとハンダを発掘する所から始める必要があるので、次の週末に持ち越し。自室の雑具入れに入ってると思うけど。エミュなので完全再現とはいかない場面もあるけど、コストを考えると妥協出来るレベルで、100円入れる気はないけど、ちょっと気になってたゲームも気軽に出来るのが利点である。ゲーセンで絶対ワースタとか、パズルゲームもやらない。あと、白い塗装は表面に薄く塗ってるだけで、早くも剥がれ始めている。全体的にクソダサいので、次に作業する時に全部剥がしてしまおう。
+        </p>
+      </td>
+    </tr>
+  </table>
+  </p>
+  <p>
+  <table class="tbl_1 clr_grn w_800 bgclr_dkb font_sml">
+    <tr class="font_mid">
+      <td class="corner_round_L w_200">2019/06/01[Sat]</td>
+      <td class="corner_round_R w_600">パンドラボックス6S</td>
+    </tr>
+    <tr class="bgclr_blk">
+       <td class="clr_lme" colspan=2>
+  <a href="images/PandroaBox_board.jpg" data-lightbox="PandoraBox" data-title="バンドラボックス内部のシステム基盤、左のコネクタはJAMMA規格なのか?">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/PandroaBox_board.jpg" alt=""/>
+  </a>
+  <a href="images/PandoraBox_control.jpg" data-lightbox="PandoraBox" data-title="レバーとボタン周り、交換は簡単である。手連は辛いので、連射装置を導入したい...">
+    <img class="bdr_5 float_r clr_wht w_400" src="images/PandoraBox_control.jpg" alt=""/>
+  </a>
+        <p>
+						●3月に購入した<a href="https://www.amazon.co.jp/s?k=%E3%83%91%E3%83%B3%E3%83%89%E3%83%A9%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9+7S&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&ref=nb_sb_noss_2" onclick="window.open(this.href); return false;">パンドラボックス6S 2260 in 1</a>を改めて触ってみた。購入した3月の時は、USB接続したジョイスティックが正常動作しない事にガッカリして、触るのを止めてしまったのだが、その後にググると、エミュ装置のシステム自体がバグッてて、USB接続しても、コイン投入の割り当てたボタンが効かない事が判明した。これを販売している中華な業者は複数存在しているらしいが、こー云うマニアックな装置を販売している割に、ゲームに対する熱意が低い、もしくはあっても浅い・薄っぺらいのが感じられて残念である。
+        </p>
+        <p>
+            ●それは兎も角、軽く幾つかのゲームを触ってみて
+<ul type=square>
+    <li>ストロークの長いレバー、打鍵感の悪いボタンは三和製に換えたい
+    <li>連射装置を組み込みたい
+</ul>
+...との課題が出て来たので、ボックスを開けて内部を確認。これを購入する直前に、マルチプラットフォーム対応ジョイスティックの<a href="https://shinka-japan.com/products/joystick_f500/" onclick="window.open(this.href); return false;">JoyStick F500[MayFlash]</a>を購入しており、同時に三和製のジョイスティックを交換用に入手していた。このF500は、なかなか期待通りの性能で、レバーが少し不満なだけだった。想定では、このF500をバンドラボックスに繋いで遊ぶ、だったのだが、接続しても正常動作しないので、ジョイスティックはハンドラボックスへ利用する事にした。交換して動作確認すると、うん、やっぱこのゲーセンで慣れ親しんだフィーリングのジョイスティックがシックリ来る。ボルトオンで交換出来るので、使わなくなったらF500に移しても良いし、3k円程度なので、ボタン購入の際に追加しても良いだろう。
+        </p>
+        <p>
+						●しかし、シューティングをガチで戦るとしたら、連射装置は必須である。10年以上振りに自力連射を試みたが、嘗てゲーセン通いしていた頃に自慢だったケイレン撃ちのスキルは、すっかりロストしており、全く連射出来ない。シューティングゲームに連射機能が組み込まれて、すっかり廃れたスキルなので、今更必要とされるとは思っていなかった。しかし、今のオッサンな私にマニュアル連射は不可能なので、業務用コントローラ向けの連射装置を組み込みたいが、この手の工作スキルとは無縁なので、上手く出来るかどーかは不明。購入するとしたら、<a href="https://www.akihabara-beep.com/" onclick="window.open(this.href); return false;">BEEP秋葉原</a>へ行ってみるべきだろう。多分、<a href="https://akiba-pc.watch.impress.co.jp/docs/news/news/1142183.html" onclick="window.open(this.href); return false;">この辺りの装置を組み込めば</a>連射装置を導入出来ると思うんだけど、果たしてどうなるやら。
+        </p>
+        <p>
+						●バンドラボックスに収録されている2260タイトルの内、私が遊びたいタイトルをゲーム選択画面でチェックしてみたら、なんと111タイトルも該当した。私の感覚だと、1Play50円が基本、2000年頃に100円が当たり前になったものだが、何れも現役時代に最低でも数千円ガッツリ攻略したものに至っては数万円を掛けたものもあるので、掛けた金額を思うと、エミュでマズマズ再現___動作が不安定なゲームもチラホラ存在する___するパントラボックスの23k円、ここにレバー・ボタン・連射装置の追加コストをブラスしても30k円程度、1タイトル辺り300円程度で飽きるまで遊べる、と破格である。アキバへ行く場合は、折角なので老舗の<a href="https://www.sengoku.co.jp/mod/sgk_cart/search.php?maker=%E4%B8%89%E5%92%8C%E9%9B%BB%E5%AD%90" onclick="window.open(this.href); return false;">千石電商</a>へ行くべきだろう。
+        </p>
+      </td>
+    </tr>
+  </table>
+  <p>
+</body>
+</html>
